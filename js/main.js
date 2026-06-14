@@ -12,6 +12,7 @@
   const lightboxClose = document.getElementById('lightboxClose');
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const nav = document.querySelector('.nav');
 
   const projects = {
     'ui-b2b': {
@@ -21,37 +22,37 @@
     },
     'ui-web': {
       title: '太极数智官网视觉改版',
-      pages: range(28, 37),
+      pages: range(27, 37),
       folder: 'ui'
     },
     'ui-app': {
       title: '蜗梦 — 租房找房APP',
-      pages: range(40, 64),
+      pages: range(39, 61),
       folder: 'ui'
     },
     'ui-practice': {
       title: '个人临摹练习',
-      pages: range(65, 70),
+      pages: range(63, 69),
       folder: 'ui'
     },
     'brand-migratory': {
       title: '候鸟青年 — 品牌设计',
-      pages: range(5, 17),
+      pages: range(4, 17),
       folder: 'brand'
     },
     'brand-vi': {
       title: '湖北体育 — VI手册设计',
-      pages: range(19, 39),
+      pages: range(18, 38),
       folder: 'brand'
     },
     'brand-poster': {
       title: '创意招贴设计',
-      pages: range(40, 49),
+      pages: range(39, 48),
       folder: 'brand'
     },
     'brand-other': {
       title: '其他作品',
-      pages: range(50, 56),
+      pages: range(49, 55),
       folder: 'brand'
     }
   };
@@ -203,6 +204,53 @@
     });
   }, { threshold: 0.1 });
   fadeEls.forEach(el => fadeObs.observe(el));
+
+  /* ── Nav auto-hide ── */
+  let lastScrollY = window.scrollY;
+  let hideTimer = null;
+  const TOP_THRESHOLD = 8;
+
+  function isAtTop() {
+    return window.scrollY <= TOP_THRESHOLD;
+  }
+
+  function showNav() {
+    if (!nav) return;
+    nav.classList.remove('nav-hidden');
+  }
+
+  function hideNav() {
+    if (!nav || isAtTop()) return;
+    nav.classList.add('nav-hidden');
+  }
+
+  function resetHideTimer() {
+    clearTimeout(hideTimer);
+    if (isAtTop()) {
+      showNav();
+      return;
+    }
+    hideTimer = setTimeout(hideNav, 1000);
+  }
+
+  function onScroll() {
+    const currentY = window.scrollY;
+
+    if (isAtTop()) {
+      showNav();
+      clearTimeout(hideTimer);
+    } else if (currentY > lastScrollY) {
+      hideNav();
+      clearTimeout(hideTimer);
+    } else if (currentY < lastScrollY) {
+      showNav();
+      resetHideTimer();
+    }
+
+    lastScrollY = currentY;
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
 
   setTheme('ui');
 })();

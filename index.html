@@ -7,7 +7,8 @@
   <title>吴金星 · WU-JINXING | 2023-2025 PORTFOLIO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-theme="ui">
@@ -23,13 +24,13 @@
         <li><a href="#hero" class="active">首页</a></li>
         <li><a href="#about">关于我</a></li>
         <li><a href="#works">作品集</a></li>
-        <li><a href="#contact">联系</a></li>
       </ul>
       <div class="nav-actions">
         <div class="theme-switch">
           <button class="theme-btn active" data-theme="ui">UI设计</button>
           <button class="theme-btn" data-theme="brand">品牌视觉</button>
         </div>
+        <a>联系:</a>
         <a class="nav-contact" href="mailto:3138413052@qq.com">3138413052@qq.com</a>
         <button class="menu-toggle" aria-label="菜单">
           <span></span><span></span><span></span>
@@ -53,6 +54,10 @@
         数字媒体艺术专业设计师，专注于 UI 界面设计、品牌视觉识别与网页改版。
         以用户为中心，用设计解决问题。
       </p>
+      <div class="hero-cta">
+        <a href="#works" class="btn btn-primary">浏览作品</a>
+        <a href="#about" class="btn btn-outline">了解更多</a>
+      </div>
       <div class="hero-projects">
         <span class="hero-project-tag" data-portfolio="ui" data-project="ui-b2b">
           <span class="hash">#</span> 禾中济线上教学B端管理系统
@@ -73,10 +78,6 @@
           <span class="hash">#</span> 常山胡柚 — 创意招贴设计
         </span>
       </div>
-      <div class="hero-cta">
-        <a href="#works" class="btn btn-primary">浏览作品</a>
-        <a href="#about" class="btn btn-outline">了解更多</a>
-      </div>
     </div>
     <svg class="hero-hand" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M20 50 L35 25 L40 30 L30 50 L50 35 L55 40 L35 60 L20 50Z" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -90,14 +91,16 @@
     <div class="container">
       <div class="section-header fade-up">
         <div class="section-num">1</div>
-        <h2 class="section-title"><span class="hash">#</span> 关于我</h2>
-        <p class="section-subtitle">About Me</p>
+        <div class="section-heading">
+          <h2 class="section-title"><span class="hash">#</span> 关于我</h2>
+          <p class="section-subtitle">About Me</p>
+        </div>
       </div>
       <div class="about-grid fade-up">
         <div class="about-profile">
           <div class="about-photo-wrap">
             <div class="about-photo-bar"></div>
-            <div class="about-photo" role="img" aria-label="吴金星">吴</div>
+            <img class="about-photo" src="assets/profile.jpg" alt="吴金星">
           </div>
           <h3 class="about-name">吴 金星</h3>
           <p class="about-name-en">WU - JINXING</p>
@@ -108,10 +111,11 @@
           </div>
         </div>
         <div class="about-bio">
-          <p>拥有两年商业设计经验，专注于版式设计与视觉识别（VI）领域。善于将客户需求转化为切实可行的视觉方案，深入理解市场需求，具备良好的沟通能力，确保设计成果符合用户期望。</p>
-          <p>熟悉各类设计软件，擅长 UI 设计、版式与色彩运用，具备品牌设计、网页改版、VI 设计等多元项目经验。</p>
-          <p>学习成绩位列班级前三，参与 10 余项学科竞赛，在 UI、VI、品牌、平面设计等领域斩获多项省级、国家级奖项。</p>
-          <p>设计是解决问题的过程，以用户价值为核心，在共情、逻辑、细节与美感之间寻求平衡，让功能与美学并存。</p>
+          <p>拥有两年商业设计经验，专注于版式设计、视觉识别，擅长将客户的想法转化为实际落地的视觉设计。</p>
+          <p>通过深入了解市场需求，提供超越期待的成果，良好的沟通协助能力，让我能精准的掌握客户需求，确保设计成果能在满足视觉、体验的同时符合用户预期。</p>
+          <p>熟悉多款软件，擅长 UI 设计，并对排版及色彩应用有深入研究。曾参与品牌全案设计、企业官网视觉改版设计、VI 设计。</p>
+          <p>专业成绩班级前三，在校期间参加学科竞赛十余次，获得省、国级奖项若干，参赛作品涵盖 UI、VI、品牌、平面招贴。</p>
+          <p>设计是解决问题的过程,核心在于为用户创造价值。它需要同理心、严谨的逻辑、对细节的苛求、系统的视角，以及在功能与美感之间寻找微妙平衡的艺术。最终目标是通过清晰、高效、愉悦的效果感受，无声息地引导用户达成目标，实现产品价值。</p>
         </div>
         <div class="about-side">
           <div>
@@ -119,13 +123,13 @@
             <ul class="about-list">
               <li>2023~2024 · 武汉禾田星锐 — 视觉设计实习生</li>
               <li>2023~2024 · 武汉家珍宝、长城宽带 — 长期合作设计师</li>
-              <li>2023 · 独立项目 — 湖北体育 VI 手册设计</li>
+              <li>2023 · 完成独立外包项目 — 湖北体育 VI 全册设计</li>
             </ul>
           </div>
           <div>
             <h3><span class="hash">#</span> 奖项 <span>Award</span></h3>
             <ul class="about-list">
-              <li>第九届米兰设计周 — 全国三等奖</li>
+              <li>第九届米兰设计周 — 国家级三等奖</li>
               <li>第十六届蓝桥杯设计大赛 — 湖北省二等奖</li>
               <li>第十七届大广赛 — 湖北省二等奖</li>
               <li>两岸数字艺术设计大赛年度奖 — 银奖</li>
@@ -135,8 +139,8 @@
           <div>
             <h3><span class="hash">#</span> 相关证照 <span>Certification</span></h3>
             <ul class="about-list">
-              <li>工信部计算机视觉架构师（初级）证书</li>
-              <li>普通话水平测试（二级甲等）</li>
+              <li>工信部计算机视觉架构师初级证书</li>
+              <li>全国普通话等级考试（二甲）</li>
               <li>机动车驾驶证（C1）</li>
             </ul>
           </div>
@@ -151,8 +155,10 @@
     <div class="container">
       <div class="section-header fade-up">
         <div class="section-num">2</div>
-        <h2 class="section-title"><span class="hash">#</span> 作品集</h2>
-        <p class="section-subtitle">Selected Works</p>
+        <div class="section-heading">
+          <h2 class="section-title"><span class="hash">#</span> 作品集</h2>
+          <p class="section-subtitle">Selected Works</p>
+        </div>
       </div>
 
       <div class="works-filter fade-up">
@@ -193,7 +199,7 @@
         <article class="work-card" data-portfolio="ui" data-category="web" data-project="ui-web">
           <div class="work-card-thumb">
             <span class="work-card-num">02</span>
-            <img src="assets/ui/page_030.jpg" alt="太极数智官网改版" loading="lazy">
+            <img src="assets/ui/page_027.jpg" alt="太极数智官网改版" loading="lazy">
           </div>
           <div class="work-card-body">
             <p class="work-card-tag">网页改版 · Website Redesign</p>
@@ -210,7 +216,7 @@
         <article class="work-card" data-portfolio="ui" data-category="app" data-project="ui-app">
           <div class="work-card-thumb">
             <span class="work-card-num">03</span>
-            <img src="assets/ui/page_040.jpg" alt="蜗梦租房APP" loading="lazy">
+            <img src="assets/ui/page_039.jpg" alt="蜗梦租房APP" loading="lazy">
           </div>
           <div class="work-card-body">
             <p class="work-card-tag">移动端APP · B2C Design</p>
@@ -227,7 +233,7 @@
         <article class="work-card" data-portfolio="ui" data-category="practice" data-project="ui-practice">
           <div class="work-card-thumb">
             <span class="work-card-num">04</span>
-            <img src="assets/ui/page_065.jpg" alt="个人临摹练习" loading="lazy">
+            <img src="assets/ui/page_063.jpg" alt="个人临摹练习" loading="lazy">
           </div>
           <div class="work-card-body">
             <p class="work-card-tag">个人练习 · Individual Exercises</p>
@@ -266,7 +272,7 @@
           <div class="work-card-body">
             <p class="work-card-tag">VI手册 · VI Design</p>
             <h3 class="work-card-title">湖北体育 — VI手册设计</h3>
-            <p class="work-card-desc">以黄鹤楼为视觉符号的湖北体育品牌视觉识别手册，涵盖标志、标准字、色彩、辅助图形及多场景应用规范。</p>
+            <p class="work-card-desc">以编钟为视觉符号的湖北体育品牌视觉识别手册，涵盖标志、标准字、色彩、辅助图形及多场景应用规范。</p>
             <div class="work-card-meta">
               <span>标志规范</span>
               <span>品牌IP</span>
@@ -278,15 +284,15 @@
         <article class="work-card" data-portfolio="brand" data-category="poster" data-project="brand-poster" style="display:none">
           <div class="work-card-thumb">
             <span class="work-card-num">03</span>
-            <img src="assets/brand/page_040.jpg" alt="创意招贴设计" loading="lazy">
+            <img src="assets/brand/page_039.jpg" alt="创意招贴设计" loading="lazy">
           </div>
           <div class="work-card-body">
             <p class="work-card-tag">创意招贴 · Creative Posters</p>
-            <h3 class="work-card-title">常山胡柚 & 古代物理学家</h3>
-            <p class="work-card-desc">常山胡柚系列创意招贴与全国大学生计算机设计大赛投稿作品"古代物理学家"，融合传统文化与现代设计表达。</p>
+            <h3 class="work-card-title">常山胡柚 & other</h3>
+            <p class="work-card-desc">包含"常山胡柚"等系列创意招贴，融合传统文化与现代设计表达。</p>
             <div class="work-card-meta">
               <span>系列招贴</span>
-              <span>AI创作</span>
+              <span>AI创作</span> 
               <span>平面创意</span>
             </div>
           </div>
@@ -295,7 +301,7 @@
         <article class="work-card" data-portfolio="brand" data-category="other" data-project="brand-other" style="display:none">
           <div class="work-card-thumb">
             <span class="work-card-num">04</span>
-            <img src="assets/brand/page_050.jpg" alt="其他作品" loading="lazy">
+            <img src="assets/brand/page_049.jpg" alt="其他作品" loading="lazy">
           </div>
           <div class="work-card-body">
             <p class="work-card-tag">其他作品 · Other Works</p>
@@ -308,19 +314,6 @@
           </div>
         </article>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="container fade-up">
-      <div class="contact-card">
-        <h2>让我们一起创造</h2>
-        <p>如果您对我的作品感兴趣，或希望探讨设计合作，欢迎随时联系。</p>
-        <a class="contact-email" href="mailto:3138413052@qq.com">3138413052@qq.com</a>
-        <br>
-        <a href="#works" class="btn btn-primary">查看全部作品</a>
       </div>
     </div>
   </section>
